@@ -1,0 +1,156 @@
+{
+  "title": "Basic Greetings and Core Grammar",
+  "lessons": [
+    {
+      "video": "https://www.youtube.com/embed/8u70xtw9gJo",
+      "pronunciationWords": ["Namaste", "Shubhodhayam", "Veedkolu"],
+      "exercise": {
+        "question": "What is the Telugu word for 'Hello'?",
+        "options": ["Namaste", "Dhan'yavaadalu", "Shubharaatri"],
+        "answer": "Namaste"
+      }
+    },
+    {
+      "video": "https://www.youtube.com/embed/5e_1z34C81U",
+      "pronunciationWords": ["Dhan'yavaadalu", "Kshaminchandi", "Avunu"],
+      "exercise": {
+        "question": "How do you say 'Thank you' in Telugu?",
+        "options": ["Dhan'yavaadalu", "Namaste", "Veedkolu"],
+        "answer": "Dhan'yavaadalu"
+      }
+    },
+    {
+      "video": "https://www.youtube.com/embed/Rwb208J8BL4",
+      "pronunciationWords": ["Nenu", "Neeku", "Vaaru"],
+      "exercise": {
+        "question": "What is the Telugu word for 'I'?",
+        "options": ["Nenu", "Neeku", "Athanu"],
+        "answer": "Nenu"
+      }
+    },
+    {
+      "video": "https://www.youtube.com/embed/5e_1z34C81U",
+      "pronunciationWords": ["Idi", "Adi", "Ivi"],
+      "exercise": {
+        "question": "Which word refers to plural things?",
+        "options": ["Ivi", "Idi", "Adi"],
+        "answer": "Ivi"
+      }
+    },
+    {
+      "video": "https://www.youtube.com/embed/yBN-6xtmKCI",
+      "pronunciationWords": ["Pai", "Kinda", "Lopala"],
+      "exercise": {
+        "question": "Which of these means 'under' in Telugu?",
+        "options": ["Kinda", "Pai", "Lopala"],
+        "answer": "Kinda"
+      }
+    },
+    {
+      "video": "https://www.youtube.com/embed/D54_4aMTNBI",
+      "pronunciationWords": ["Unnaadu", "Unnaanu", "Unnaru"],
+      "exercise": {
+        "question": "Which verb form matches 'I am'?",
+        "options": ["Unnaanu", "Unnaadu", "Unnaru"],
+        "answer": "Unnaanu"
+      }
+    },
+    {
+      "video": "https://www.youtube.com/embed/yBN-6xtmKCI",
+      "pronunciationWords": ["Undevaadu", "Undevaaru", "Undu"],
+      "exercise": {
+        "question": "What is the plural past form of 'to be'?",
+        "options": ["Undevaaru", "Undevaadu", "Undu"],
+        "answer": "Undevaaru"
+      }
+    },
+    {
+      "video": "https://www.youtube.com/embed/qEdFwf8ICug",
+      "pronunciationWords": ["Undi", "Unnadi", "Undindi"],
+      "exercise": {
+        "question": "What is the past tense of 'Undi' (is)?",
+        "options": ["Undindi", "Unnadi", "Undi"],
+        "answer": "Undindi"
+      }
+    }
+  ],
+  "finalQuiz": [
+    {
+      "question": "What does 'Namaste' mean?",
+      "options": ["Hello", "Goodbye", "Thanks"],
+      "answer": "Hello"
+    },
+    {
+      "question": "Which of the following is a pronoun?",
+      "options": ["Nenu", "Naa", "Nannu"],
+      "answer": "Nenu"
+    },
+    {
+      "question": "What does 'Ivi' refer to?",
+      "options": ["Plural items", "Singular item", "Time"],
+      "answer": "Plural items"
+    },
+    {
+      "question": "Which word is used to say 'inside'?",
+      "options": ["Lopala", "Pai", "Venaka"],
+      "answer": "Lopala"
+    },
+    {
+      "question": "Which form is correct for 'He is'?",
+      "options": ["Unnaadu", "Unnaanu", "Unnaru"],
+      "answer": "Unnaadu"
+    },
+    {
+      "question": "What is the Telugu word for 'Thank you'?",
+      "options": ["Dhan'yavaadalu", "Shubharaatri", "Namaste"],
+      "answer": "Dhan'yavaadalu"
+    },
+    {
+      "question": "What is the past form of 'Unnaru'?",
+      "options": ["Undevaaru", "Undevaadu", "Undi"],
+      "answer": "Undevaaru"
+    },
+    {
+      "question": "What is the opposite of 'Adi'?",
+      "options": ["Idi", "Ivi", "Avi"],
+      "answer": "Idi"
+    },
+    {
+      "question": "What is the correct verb for 'They are'?",
+      "options": ["Unnaru", "Unnaadu", "Unnaanu"],
+      "answer": "Unnaru"
+    },
+    {
+      "question": "How do you say 'Goodbye' in Telugu?",
+      "options": ["Veedkolu", "Namaste", "Dhan'yavaadalu"],
+      "answer": "Veedkolu"
+    },
+    {
+      "question": "Which of these is a positional word?",
+      "options": ["Pai", "Chaala", "Enduku"],
+      "answer": "Pai"
+    },
+    {
+      "question": "What does 'Undindi' indicate?",
+      "options": ["Past tense", "Present tense", "Future tense"],
+      "answer": "Past tense"
+    },
+    {
+      "question": "What is the Telugu equivalent of 'I'?",
+      "options": ["Nenu", "Athanu", "Neeku"],
+      "answer": "Nenu"
+    },
+    {
+      "question": "Which of these is a plural pronoun?",
+      "options": ["Vaaru", "Athanu", "Neeku"],
+      "answer": "Vaaru"
+    },
+    {
+      "question": "Choose the correct past form of 'Undi'.",
+      "options": ["Undindi", "Unnadi", "Untundi"],
+      "answer": "Undindi"
+    }
+  ]
+}
+
+

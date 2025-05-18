@@ -1,0 +1,154 @@
+{
+  "title": "Basic Greetings and Essential Grammar",
+  "lessons": [
+    {
+      "video": "https://www.youtube.com/embed/CbPy_CjJR90",
+      "pronunciationWords": ["Hello", "Good Morning", "Bye"],
+      "exercise": {
+        "question": "What is the correct way to say 'Hello' in English?",
+        "options": ["Bonjour", "Hola", "Hello"],
+        "answer": "Hello"
+      }
+    },
+    {
+      "video": "https://www.youtube.com/embed/vNTiUh72lFo",
+      "pronunciationWords": ["Hi", "Hello", "Good day"],
+      "exercise": {
+        "question": "Which of these is NOT a formal greeting?",
+        "options": ["Hi", "Good morning", "Good evening"],
+        "answer": "Hi"
+      }
+    },
+    {
+      "video": "https://www.youtube.com/embed/Db4AC9iaj4c",
+      "pronunciationWords": ["I", "You", "They"],
+      "exercise": {
+        "question": "Which is a subjective pronoun?",
+        "options": ["They", "Them", "Their"],
+        "answer": "They"
+      }
+    },
+    {
+      "video": "https://www.youtube.com/embed/rWmd39oMZws",
+      "pronunciationWords": ["This", "That", "Those"],
+      "exercise": {
+        "question": "Which word refers to something far and plural?",
+        "options": ["That", "Those", "These"],
+        "answer": "Those"
+      }
+    },
+    {
+      "video": "https://www.youtube.com/embed/3Lj0_D1FZ3g",
+      "pronunciationWords": ["On", "In", "Under"],
+      "exercise": {
+        "question": "Where is the book if it is inside the bag?",
+        "options": ["On the bag", "In the bag", "Under the bag"],
+        "answer": "In the bag"
+      }
+    },
+    {
+      "video": "https://www.youtube.com/embed/F5WDeNw9_Ek",
+      "pronunciationWords": ["Is", "Are", "Am"],
+      "exercise": {
+        "question": "Which verb matches with 'He'?",
+        "options": ["Am", "Is", "Are"],
+        "answer": "Is"
+      }
+    },
+    {
+      "video": "https://www.youtube.com/embed/HuNnWNu7gw0",
+      "pronunciationWords": ["Was", "Were", "Be"],
+      "exercise": {
+        "question": "What is the past form of 'Are'?",
+        "options": ["Be", "Was", "Were"],
+        "answer": "Were"
+      }
+    },
+    {
+      "video": "https://www.youtube.com/embed/agMpwm7VnvM",
+      "pronunciationWords": ["Has", "Have", "Had"],
+      "exercise": {
+        "question": "Which of the following is the past tense of 'Have'?",
+        "options": ["Had", "Has", "Have"],
+        "answer": "Had"
+      }
+    }
+  ],
+  "finalQuiz": [
+  {
+    "question": "What is the correct greeting to say in the morning?",
+    "options": ["Good Night", "Good Morning", "See you"],
+    "answer": "Good Morning"
+  },
+  {
+    "question": "Which is a subjective pronoun?",
+    "options": ["He", "His", "Him"],
+    "answer": "He"
+  },
+  {
+    "question": "What is the demonstrative for plural objects close to you?",
+    "options": ["Those", "These", "That"],
+    "answer": "These"
+  },
+  {
+    "question": "Choose a preposition of place.",
+    "options": ["Under", "Runs", "Happiness"],
+    "answer": "Under"
+  },
+  {
+    "question": "Which is a correct grammar sentence?",
+    "options": ["She go to school", "She goes to school", "She going school"],
+    "answer": "She goes to school"
+  },
+  {
+    "question": "Which is past form of 'are'?",
+    "options": ["Be", "Was", "Were"],
+    "answer": "Were"
+  },
+  {
+    "question": "Select the correct use of 'Has'.",
+    "options": ["He has a dog", "They has a dog", "I has a dog"],
+    "answer": "He has a dog"
+  },
+  {
+    "question": "Which word is a preposition?",
+    "options": ["On", "Fast", "Swim"],
+    "answer": "On"
+  },
+  {
+    "question": "Choose the demonstrative for something far.",
+    "options": ["This", "These", "That"],
+    "answer": "That"
+  },
+  {
+    "question": "What is a correct sentence using 'am'?",
+    "options": ["I am happy", "You am happy", "They am happy"],
+    "answer": "I am happy"
+  },
+  {
+    "question": "Which of the following is a verb?",
+    "options": ["Run", "Blue", "Quickly"],
+    "answer": "Run"
+  },
+  {
+    "question": "Identify the plural pronoun.",
+    "options": ["He", "They", "She"],
+    "answer": "They"
+  },
+  {
+    "question": "What does 'Bye' mean?",
+    "options": ["Hello", "See you", "Thanks"],
+    "answer": "See you"
+  },
+  {
+    "question": "Which greeting is informal?",
+    "options": ["Hi", "Good morning", "Good evening"],
+    "answer": "Hi"
+  },
+  {
+    "question": "Pick the past tense of 'Have'.",
+    "options": ["Has", "Have", "Had"],
+    "answer": "Had"
+  }
+]
+}

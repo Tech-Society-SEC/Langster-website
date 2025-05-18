@@ -1,0 +1,154 @@
+{
+  "title": "Basic Greetings and Essential Grammar",
+  "lessons": [
+    {
+      "video": "https://www.youtube.com/embed/qvI_7St3mBk",
+      "pronunciationWords": ["Bonjour", "Bonsoir", "Au revoir"],
+      "exercise": {
+        "question": "How do you say 'Hello' in French?",
+        "options": ["Bonjour", "Hello", "Salut"],
+        "answer": "Bonjour"
+      }
+    },
+    {
+      "video": "https://www.youtube.com/embed/-JhOFyw2WlI",
+      "pronunciationWords": ["Salut", "Bonjour", "Bonne journée"],
+      "exercise": {
+        "question": "Which of these is an informal greeting in French?",
+        "options": ["Salut", "Bonjour", "Bonsoir"],
+        "answer": "Salut"
+      }
+    },
+    {
+      "video": "https://www.youtube.com/embed/70gxgZfpsFU",
+      "pronunciationWords": ["Je", "Tu", "Ils"],
+      "exercise": {
+        "question": "Which word means 'I' in French?",
+        "options": ["Je", "Tu", "Il"],
+        "answer": "Je"
+      }
+    },
+    {
+      "video": "https://www.youtube.com/embed/RO4d-3Pmg3k",
+      "pronunciationWords": ["Ce", "Cela", "Ces"],
+      "exercise": {
+        "question": "Which word refers to plural distant objects?",
+        "options": ["Ce", "Ces", "Cela"],
+        "answer": "Ces"
+      }
+    },
+    {
+      "video": "https://www.youtube.com/embed/DGCB0ySwfok",
+      "pronunciationWords": ["Sur", "Dans", "Sous"],
+      "exercise": {
+        "question": "Which word means 'inside' in French?",
+        "options": ["Sur le sac", "Dans le sac", "Sous le sac"],
+        "answer": "Dans le sac"
+      }
+    },
+    {
+      "video": "https://www.youtube.com/embed/SaPiL5DByqk",
+      "pronunciationWords": ["Est", "Sont", "Suis"],
+      "exercise": {
+        "question": "Which verb form matches 'Il' (He)?",
+        "options": ["Suis", "Est", "Sont"],
+        "answer": "Est"
+      }
+    },
+    {
+      "video": "https://www.youtube.com/embed/FV4d5X4RT4o",
+      "pronunciationWords": ["Était", "Étaient", "Être"],
+      "exercise": {
+        "question": "What is the past tense of 'sont' (they are)?",
+        "options": ["Être", "Était", "Étaient"],
+        "answer": "Étaient"
+      }
+    },
+    {
+      "video": "https://www.youtube.com/embed/hF7alkCUtCY",
+      "pronunciationWords": ["A", "Avons", "Avait"],
+      "exercise": {
+        "question": "Which word is the past tense of 'avoir' (to have)?",
+        "options": ["A", "Avons", "Avait"],
+        "answer": "Avait"
+      }
+    }
+  ],
+  "finalQuiz": [
+    {
+      "question": "What is the correct greeting to use in the morning?",
+      "options": ["Bonne nuit", "Bonjour", "À plus tard"],
+      "answer": "Bonjour"
+    },
+    {
+      "question": "Which of these is a subject pronoun?",
+      "options": ["Je", "Mon", "Moi"],
+      "answer": "Je"
+    },
+    {
+      "question": "Which demonstrative is used for multiple nearby objects?",
+      "options": ["Ces", "Ce", "Cela"],
+      "answer": "Ces"
+    },
+    {
+      "question": "Which of these is a preposition of place?",
+      "options": ["Sous", "Rapide", "Joie"],
+      "answer": "Sous"
+    },
+    {
+      "question": "Which sentence is grammatically correct?",
+      "options": ["Elle va à l'école", "Elle vont école", "Elle aller à l'école"],
+      "answer": "Elle va à l'école"
+    },
+    {
+      "question": "What is the past tense of 'sont' (they are)?",
+      "options": ["Être", "Était", "Étaient"],
+      "answer": "Étaient"
+    },
+    {
+      "question": "Which sentence uses 'a' correctly?",
+      "options": ["Il a un chien", "Ils a un chien", "Je a un chien"],
+      "answer": "Il a un chien"
+    },
+    {
+      "question": "Which of these is a preposition?",
+      "options": ["Sur", "Courir", "Heureux"],
+      "answer": "Sur"
+    },
+    {
+      "question": "Which demonstrative means 'that' (distant object)?",
+      "options": ["Ce", "Ces", "Cela"],
+      "answer": "Cela"
+    },
+    {
+      "question": "Which sentence correctly uses 'suis'?",
+      "options": ["Je suis content", "Tu suis content", "Ils suis content"],
+      "answer": "Je suis content"
+    },
+    {
+      "question": "Which of these is a verb?",
+      "options": ["Marcher", "Bleu", "Heureusement"],
+      "answer": "Marcher"
+    },
+    {
+      "question": "Which is a plural pronoun?",
+      "options": ["Il", "Ils", "Elle"],
+      "answer": "Ils"
+    },
+    {
+      "question": "What does 'Au revoir' mean?",
+      "options": ["Hello", "See you later", "Thank you"],
+      "answer": "See you later"
+    },
+    {
+      "question": "Which greeting is informal?",
+      "options": ["Salut", "Bonjour", "Bonsoir"],
+      "answer": "Salut"
+    },
+    {
+      "question": "Choose the past tense of the verb 'avoir' (to have).",
+      "options": ["A", "Avons", "Avait"],
+      "answer": "Avait"
+    }
+  ]
+}

@@ -1,0 +1,219 @@
+/* Color Palette: #DFF2EB, #B9E5E8, #7AB2D3, #4A628A */
+/* Color Palette: #DFF2EB, #B9E5E8, #7AB2D3, #4A628A */
+
+.home-container {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #dff2eb;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+/* Unified Top Navbar */
+.top-navbar {
+  background-color: #7ab2d3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Logo (Left Side) */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-circle {
+  width: 50px;
+  height: 50px;
+  background-color: #4a628a;
+  border-radius: 50%;
+  margin-right: 14px;
+}
+
+.logo-text {
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+}
+
+/* Buttons (Right Side of Top Navbar) */
+.nav-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.nav-buttons button {
+  background-color: #ffffff;
+  color: #000;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.nav-buttons button:hover {
+  background-color: #4a628a;
+  color: white;
+}
+
+/* Hero Section */
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 48px;
+  background-color: #dff2eb;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+/* Hero Text – Left Side */
+.about-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.about-text h2 {
+  color: #4a628a;
+  font-size: 36px;
+  margin-bottom: 16px;
+}
+
+.about-text p {
+  font-size: 18px;
+  color: #333;
+}
+
+/* Hero Image Box – Right Side */
+.about-image {
+  flex: 1;
+  width: 100%;
+  max-width: 420px;
+  height: 260px;
+  background-color: #b9e5e8;
+  border-radius: 12px;
+}
+
+
+/* Language Cards Section */
+.languages-section {
+  padding: 32px 24px;
+  background-color: #b9e5e8;
+  text-align: center;
+}
+
+.languages-section h3 {
+  color: #4a628a;
+  font-size: 22px;
+}
+
+.language-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 24px;
+  margin-top: 24px;
+  justify-items: center;
+}
+
+/* 📌 DESKTOP + TABLET WIDE SCREEN FIX */
+@media (min-width: 768px) {
+  .home-container {
+    width: 100vw;
+  }
+
+  .languages-section {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .language-cards {
+    justify-items: stretch;
+  }
+}
+
+.language-card {
+  background-color: #7ab2d3;
+  padding: 16px;
+  border-radius: 12px;
+  color: white;
+  width: 260px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.language-card:hover {
+  transform: translateY(-5px);
+}
+
+.card-image {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.start-btn {
+  background-color: #4a628a;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 20px;
+  width: 100%;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.start-btn:hover {
+  background-color: #123524;
+}
+
+.card-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  width: 100%;
+}
+
+.flag-icon {
+  width: 24px;
+  height: 18px;
+  object-fit: contain;
+  border-radius: 3px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .hero-section {
+    padding: 20px;
+  }
+
+  .about-text h2 {
+    font-size: 22px;
+  }
+
+  .card-image {
+    height: 80px;
+  }
+
+  .language-cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

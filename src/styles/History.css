@@ -1,0 +1,163 @@
+/* src/styles/History.css */
+
+/* Overall wrapper uses your palette */
+.history-container {
+  position: relative;
+  background-color: #b9e5e8;    /* light-blue */
+  padding: 40px 24px;
+  font-family: 'Segoe UI', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Optional very-light overlay of language words */
+.overlay {
+  background-image: url('../assets/bg-french-words.png');
+  background-repeat: repeat;
+  background-size: contain;
+  opacity: 0.08;
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* The white, rounded panel for each language */
+.language-section {
+  position: relative;
+  z-index: 1;
+  background-color: rgba(255,255,255,0.8);
+  border-radius: 16px;
+  padding: 32px 24px;
+  padding-bottom: 56px; /* add space for dots */
+  margin-bottom: 32px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  animation: fadeIn 0.8s ease-in-out both;
+}
+
+/* Headings & text */
+.language-section h2 {
+  color: #4a628a;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.sub-section {
+  margin-bottom: 20px;
+}
+.sub-section h3 {
+  color: #2d4763;
+  font-size: 20px;
+  margin-bottom: 4px; /* reduced spacing before carousel */
+}
+.sub-section p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ---------------------- */
+/* Carousel (react-responsive-carousel) overrides */
+/* ---------------------- */
+
+/* Wrap carousel in a container to control layout */
+.carousel-wrapper {
+  position: relative;
+  padding-bottom: 48px; /* enough space for control dots below */
+  margin-top: 12px;
+}
+
+/* Carousel layout */
+.carousel {
+  background: transparent !important;
+  padding: 0;
+  border-radius: 0;
+}
+
+/* Limit size and center the slides */
+.carousel .slider-wrapper,
+.carousel .slider {
+  max-width: 320px;
+  max-height: 300px;
+  margin: 0 auto;
+  overflow: visible;
+}
+
+/* Ensure control dots are displayed visibly */
+.carousel .control-dots {
+  position: absolute;
+  bottom: 0; /* position at bottom inside carousel-wrapper */
+  left: 0;
+  right: 0;
+  display: flex !important;
+  justify-content: center;
+  z-index: 5;
+}
+
+/* Dot styles */
+.carousel .control-dots .dot {
+  width: 8px;
+  height: 8px;
+  margin: 0 4px;
+  border-radius: 50%;
+  background: rgba(74, 98, 138, 0.6); /* semi-transparent dark blue */
+  transition: background 0.25s, transform 0.25s;
+}
+
+.carousel .control-dots .dot.selected {
+  background: #4a628a;
+  transform: scale(1.2);
+}
+
+.carousel .control-dots .dot:hover {
+  background: #4a628a;
+  transform: scale(1.1);
+}
+ 
+/* Style each slide as a “book card” */
+.book-slide {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  height: 300px;
+}
+.book-slide p {
+  background: white;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  font-size: 16px;
+  line-height: 1.4;
+  color: #333;
+  max-width: 260px;
+  text-align: center;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive scaling */
+@media (max-width: 600px) {
+  .language-section {
+    padding: 24px 16px;
+  }
+  .carousel .slider-wrapper {
+    max-width: 220px;
+  }
+  .book-slide p {
+    max-width: 180px;
+    padding: 12px;
+    font-size: 14px;
+  }
+}

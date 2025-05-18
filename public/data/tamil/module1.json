@@ -1,0 +1,154 @@
+{
+  "title": "Basic Greetings and Core Grammar",
+  "lessons": [
+    {
+      "video": "https://www.youtube.com/embed/uL2M-NHR86Y",
+      "pronunciationWords": ["வணக்கம்", "இரவு வணக்கம்", "பிரிவு"],
+      "exercise": {
+        "question": "How do you say 'Hello' in Tamil?",
+        "options": ["வணக்கம்", "நன்றி", "இரவு வணக்கம்"],
+        "answer": "வணக்கம்"
+      }
+    },
+    {
+      "video": "https://www.youtube.com/embed/JBkTa7KI1_Q",
+      "pronunciationWords": ["நன்றி", "மன்னிக்கவும்", "சரி"],
+      "exercise": {
+        "question": "Which of these means 'Thank you' in Tamil?",
+        "options": ["நன்றி", "மன்னிக்கவும்", "வணக்கம்"],
+        "answer": "நன்றி"
+      }
+    },
+    {
+      "video": "https://www.youtube.com/embed/7Nsh1ftox_w",
+      "pronunciationWords": ["நான்", "நீ", "அவர்கள்"],
+      "exercise": {
+        "question": "What is the Tamil word for 'I'?",
+        "options": ["நான்", "நீ", "அவன்"],
+        "answer": "நான்"
+      }
+    },
+    {
+      "video": "https://www.youtube.com/embed/9xOFuAKaRUE",
+      "pronunciationWords": ["இந்த", "அந்த", "இவை"],
+      "exercise": {
+        "question": "Which word refers to plural objects?",
+        "options": ["இந்த", "இவை", "அந்த"],
+        "answer": "இவை"
+      }
+    },
+    {
+      "video": "https://www.youtube.com/embed/YO9tP7lx1qY",
+      "pronunciationWords": ["மேல்", "கீழ்", "உள்ளே"],
+      "exercise": {
+        "question": "Which word means 'inside'?",
+        "options": ["மேல்", "கீழ்", "உள்ளே"],
+        "answer": "உள்ளே"
+      }
+    },
+    {
+      "video": "https://www.youtube.com/embed/7xDj3bmDdmc",
+      "pronunciationWords": ["இருக்கிறார்", "இருக்கிறேன்", "இருக்கிறார்கள்"],
+      "exercise": {
+        "question": "Which verb form matches 'he'?",
+        "options": ["இருக்கிறேன்", "இருக்கிறார்", "இருக்கிறார்கள்"],
+        "answer": "இருக்கிறார்"
+      }
+    },
+    {
+      "video": "https://www.youtube.com/embed/GfPuITZVtxM",
+      "pronunciationWords": ["இருந்தார்", "இருந்தனர்", "இரு"],
+      "exercise": {
+        "question": "What is the past tense of 'இருக்கிறார்கள்'?",
+        "options": ["இருந்தனர்", "இருந்தார்", "இரு"],
+        "answer": "இருந்தனர்"
+      }
+    },
+    {
+      "video": "https://www.youtube.com/embed/VHy5yo5OrUg",
+      "pronunciationWords": ["உண்டு", "உள்ளது", "இருந்தது"],
+      "exercise": {
+        "question": "What is the past tense of 'உண்டு'?",
+        "options": ["இருந்தது", "உள்ளது", "இருக்கிறது"],
+        "answer": "இருந்தது"
+      }
+    }
+  ],
+  "finalQuiz": [
+    {
+      "question": "How do you say 'Good Morning' in Tamil?",
+      "options": ["வணக்கம்", "நல்ல இரவு", "மாலை வணக்கம்"],
+      "answer": "வணக்கம்"
+    },
+    {
+      "question": "Which of the following is a pronoun?",
+      "options": ["நான்", "என்", "என்னை"],
+      "answer": "நான்"
+    },
+    {
+      "question": "What does 'இவை' refer to?",
+      "options": ["Multiple things", "One object", "A place"],
+      "answer": "Multiple things"
+    },
+    {
+      "question": "Which of the following is a positional word?",
+      "options": ["மேல்", "வேகம்", "மகிழ்ச்சி"],
+      "answer": "மேல்"
+    },
+    {
+      "question": "Which sentence is correct?",
+      "options": ["அவள் பள்ளிக்குச் செல்கிறாள்", "அவள் பள்ளிக்குச் செல்கிறது", "அவள் பள்ளிக்குச் செல்கின்றேன்"],
+      "answer": "அவள் பள்ளிக்குச் செல்கிறாள்"
+    },
+    {
+      "question": "What is the past tense of 'இருக்கிறார்கள்'?",
+      "options": ["இருந்தனர்", "இருந்தார்", "இரு"],
+      "answer": "இருந்தனர்"
+    },
+    {
+      "question": "Which sentence uses 'உண்டு' correctly?",
+      "options": ["அவளுக்கு புத்தகம் உண்டு", "அவளுக்கு புத்தகம் உள்ளேன்", "அவளுக்கு புத்தகம் இருக்கிறேன்"],
+      "answer": "அவளுக்கு புத்தகம் உண்டு"
+    },
+    {
+      "question": "Which of the following is a location word?",
+      "options": ["உள்ளே", "ஓடு", "மகிழ்ச்சி"],
+      "answer": "உள்ளே"
+    },
+    {
+      "question": "What is the opposite of 'அந்த'?",
+      "options": ["இந்த", "இவை", "அவை"],
+      "answer": "இந்த"
+    },
+    {
+      "question": "'நான்' என்ற வார்த்தைக்கு சரியான வினைச்சொல் எது?",
+      "options": ["இருக்கிறேன்", "இருக்கிறார்", "இருக்கிறார்கள்"],
+      "answer": "இருக்கிறேன்"
+    },
+    {
+      "question": "Which of the following is a verb?",
+      "options": ["நட", "நீலம்", "மிகவும்"],
+      "answer": "நட"
+    },
+    {
+      "question": "Which of the following is a plural pronoun?",
+      "options": ["அவன்", "அவர்கள்", "அவள்"],
+      "answer": "அவர்கள்"
+    },
+    {
+      "question": "What does 'பிரிவு' mean?",
+      "options": ["Hello", "Bye", "See you again"],
+      "answer": "See you again"
+    },
+    {
+      "question": "Which of the following is an informal greeting?",
+      "options": ["வணக்கம்", "மாலை வணக்கம்", "ஹை"],
+      "answer": "ஹை"
+    },
+    {
+      "question": "What is the past tense of 'உண்டு'?",
+      "options": ["உள்ளது", "இருந்தது", "இருக்கிறது"],
+      "answer": "இருந்தது"
+    }
+  ]
+}
