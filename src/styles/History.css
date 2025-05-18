@@ -1,15 +1,12 @@
-/* src/styles/History.css */
 
-/* Overall wrapper uses your palette */
 .history-container {
   position: relative;
-  background-color: #b9e5e8;    /* light-blue */
+  background-color: #b9e5e8;  
   padding: 40px 24px;
   font-family: 'Segoe UI', sans-serif;
   overflow-x: hidden;
 }
 
-/* Optional very-light overlay of language words */
 .overlay {
   background-image: url('../assets/bg-french-words.png');
   background-repeat: repeat;
@@ -22,20 +19,20 @@
   pointer-events: none;
 }
 
-/* The white, rounded panel for each language */
+
 .language-section {
   position: relative;
   z-index: 1;
   background-color: rgba(255,255,255,0.8);
   border-radius: 16px;
   padding: 32px 24px;
-  padding-bottom: 56px; /* add space for dots */
+  padding-bottom: 56px; 
   margin-bottom: 32px;
   box-shadow: 0 8px 24px rgba(0,0,0,0.08);
   animation: fadeIn 0.8s ease-in-out both;
 }
 
-/* Headings & text */
+
 .language-section h2 {
   color: #4a628a;
   font-size: 30px;
@@ -49,7 +46,7 @@
 .sub-section h3 {
   color: #2d4763;
   font-size: 20px;
-  margin-bottom: 4px; /* reduced spacing before carousel */
+  margin-bottom: 4px; 
 }
 .sub-section p {
   font-size: 16px;
@@ -57,25 +54,21 @@
   line-height: 1.6;
 }
 
-/* ---------------------- */
-/* Carousel (react-responsive-carousel) overrides */
-/* ---------------------- */
-
-/* Wrap carousel in a container to control layout */
+/* Carousel  */
 .carousel-wrapper {
   position: relative;
-  padding-bottom: 48px; /* enough space for control dots below */
+  padding-bottom: 48px; 
   margin-top: 12px;
 }
 
-/* Carousel layout */
+
 .carousel {
   background: transparent !important;
   padding: 0;
   border-radius: 0;
 }
 
-/* Limit size and center the slides */
+
 .carousel .slider-wrapper,
 .carousel .slider {
   max-width: 320px;
@@ -84,10 +77,10 @@
   overflow: visible;
 }
 
-/* Ensure control dots are displayed visibly */
+
 .carousel .control-dots {
   position: absolute;
-  bottom: 0; /* position at bottom inside carousel-wrapper */
+  bottom: 0;
   left: 0;
   right: 0;
   display: flex !important;
@@ -95,13 +88,12 @@
   z-index: 5;
 }
 
-/* Dot styles */
 .carousel .control-dots .dot {
   width: 8px;
   height: 8px;
   margin: 0 4px;
   border-radius: 50%;
-  background: rgba(74, 98, 138, 0.6); /* semi-transparent dark blue */
+  background: rgba(74, 98, 138, 0.6); 
   transition: background 0.25s, transform 0.25s;
 }
 
@@ -115,7 +107,7 @@
   transform: scale(1.1);
 }
  
-/* Style each slide as a “book card” */
+
 .book-slide {
   display: flex !important;
   justify-content: center;
@@ -147,7 +139,6 @@
   }
 }
 
-/* Responsive scaling */
 @media (max-width: 600px) {
   .language-section {
     padding: 24px 16px;
