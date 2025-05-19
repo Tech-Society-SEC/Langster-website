@@ -1,4 +1,3 @@
-
 .home-container {
   font-family: 'Segoe UI', sans-serif;
   background-color: #dff2eb;
@@ -7,7 +6,9 @@
   width: 100%;
   min-height: 100vh;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
+
 
 /* Unified Top Navbar */
 .top-navbar {
@@ -32,8 +33,17 @@
   background-color: #4a628a;
   border-radius: 50%;
   margin-right: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
-
+.logo-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* fills the circle, cropping if needed */
+  display:block;
+}
 .logo-text {
   font-size: 30px;
   font-weight: bold;
@@ -90,25 +100,22 @@
 .about-text p {
   font-size: 18px;
   color: #333;
+  
 }
 
-/* Hero Image Box – Right Side */
-.about-image {
-  flex: 1;
-  width: 100%;
-  max-width: 420px;
-  height: 260px;
-  background-color: #b9e5e8;
-  border-radius: 12px;
-}
 
 
 /* Language Cards Section */
 .languages-section {
-  padding: 32px 24px;
+  max-width: 1400px;
+  margin: 0 auto;
+  height:400px;
+  padding: 80px 48px; /* match hero-section */
   background-color: #b9e5e8;
   text-align: center;
+  box-sizing: border-box;
 }
+
 
 .languages-section h3 {
   color: #4a628a;
@@ -130,7 +137,7 @@
   }
 
   .languages-section {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
   }
 
