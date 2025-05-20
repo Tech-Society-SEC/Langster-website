@@ -2,7 +2,7 @@
 
 ## PROJECT PROPOSAL:
 LANGSTER – A Front-End Language Learning App
-Langster, an engaging front-end web application built entirely with React, HTML, CSS, and JavaScript. Langster aims to provide users with an immersive language learning experience, supporting English, French, German, and regional Indian languages. The app will feature lessons, video-based tutorials, voice pronunciation support, responsive UI.  This project will serve as a complete demonstration of our front-end capabilities and UX design proficiency.
+Langster, an engaging front-end web application built entirely with React, HTML, CSS, and JavaScript. Langster aims to provide users with an immersive language learning experience, supporting English, French and regional Indian languages. The app will feature lessons, video-based tutorials, voice pronunciation support, responsive UI.  This project will serve as a complete demonstration of our front-end capabilities and UX design proficiency.
 
 ## UI-UX ANALYSIS: 
 
