@@ -14,8 +14,7 @@ Figma Link:  https://www.figma.com/design/GNXIft7gepe5XqrFQqZdXo/Langster?node-i
 
 ## COMPETITOR ANALYSIS :
 Popular platforms like Duolingo, Tandem, and Speakly have dominated the language learning world with advanced AI tools and premium-only content. Duolingo offers gamified learning but locks key features behind a paid version. Tandem and Speakly also provide more effective learning paths through their premium versions.  Langster, on the other hand, is a completely free platform, focused on  simplicity. It currently supports four languages-English, French, Telugu, and Tamil as structured modules from basic to advanced, ending with a graded quiz. Rather than competing, we view these platforms as inspirations, shaping our mission to make language learning inclusive and approachable for all.
-## TECHNOLOGIES USED:
-## FUTURE SCOPE:
+
 
 ## CONCLUSION:
 Langster is built with the goal of making language learning simple, accessible, and enjoyable for everyone. By focusing on structured content and user-friendly design, it offers a practical path for learners at all levels. This project reflects our vision to support meaningful communication through free, inclusive language education.
