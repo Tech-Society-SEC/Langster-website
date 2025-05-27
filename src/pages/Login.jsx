@@ -1,5 +1,6 @@
-import '../styles/Login.css';
+import '../styles/Login.css'; 
 import React, { useState } from 'react';
+import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
@@ -15,6 +16,14 @@ const Login = () => {
   const [isSignUp, setIsSignUp] = useState(true);
   const [isFirstLogin, setIsFirstLogin] = useState(false);
 
+  useEffect(() => {
+    const hasVisitedBefore = localStorage.getItem('hasVisitedBefore');
+    if (localStorage.getItem('isLoggedIn') === 'true' && !hasVisitedBefore) {
+      setIsFirstLogin(true);
+      localStorage.setItem('hasVisitedBefore', 'true');
+    }
+  }, []);
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
@@ -28,13 +37,25 @@ const Login = () => {
       // Save user signup data
       localStorage.setItem('userData', JSON.stringify(formData));
       localStorage.setItem('isLoggedIn', 'true');
-      setIsFirstLogin(true);
+      const hasVisitedBefore = localStorage.getItem('hasVisitedBefore');
+      if (!hasVisitedBefore) {
+        setIsFirstLogin(true);
+        localStorage.setItem('hasVisitedBefore', 'true');
+      } else {
+        navigate('/profile');
+      }
     } else {
       // Login check
       const storedUser = JSON.parse(localStorage.getItem('userData'));
       if (storedUser && storedUser.email === formData.email && storedUser.password === formData.password) {
         localStorage.setItem('isLoggedIn', 'true');
-        navigate('/profile');
+        const hasVisitedBefore = localStorage.getItem('hasVisitedBefore');
+        if (!hasVisitedBefore) {
+          setIsFirstLogin(true);
+          localStorage.setItem('hasVisitedBefore', 'true');
+        } else {
+          navigate('/profile');
+        }
       } else {
         alert('Invalid Credentials');
       }

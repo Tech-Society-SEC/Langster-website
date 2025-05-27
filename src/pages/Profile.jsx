@@ -1,4 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react';
+import { useNavigate } from 'react-router-dom';
+
 import '../styles/Profile.css';
 
 const Profile = () => {
@@ -15,6 +17,7 @@ const Profile = () => {
 
   const [editingField, setEditingField] = useState(null);
   const [tempValue, setTempValue] = useState('');
+  const navigate = useNavigate();
   const profileImgInputRef = useRef(null);
   const bgImgInputRef = useRef(null);
 
@@ -75,7 +78,7 @@ const Profile = () => {
       updateField(field);
     }
   };
-
+  
   const updateField = (field) => {
     setProfileData(prev => ({
       ...prev,
@@ -112,6 +115,12 @@ const Profile = () => {
       bgImgInputRef.current.click();
     }
   };
+   
+  const handleLogout = () => {
+  localStorage.clear();  
+  sessionStorage.clear(); 
+  navigate('/');
+};
 
   return (
     <div className="profile-page">
@@ -211,6 +220,9 @@ const Profile = () => {
               ></div>
             </div>
           </div>
+           
+            <button className="logout-button" onClick={handleLogout}>Log Out</button>
+
         </div>
       </div>
     </div>

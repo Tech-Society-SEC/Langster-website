@@ -120,6 +120,23 @@
   transition: width 0.5s ease-in-out;
 }
 
+.logout-button {
+  margin: 30px auto;
+  display: block;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #4a628a;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: #6779a1;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .info-box {

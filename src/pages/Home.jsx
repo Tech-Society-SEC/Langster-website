@@ -39,16 +39,12 @@ const Home = () => {
   const handleLoginRedirect = () => {
     navigate('/login');
   };
-
-  const handleHistoryRedirect = () => {
-    navigate('/history');
-  };
-
+  
   return (
     <div className="home-container">
       {/* Top Navbar – Logo + Buttons */}
      
-<div className="top-navbar">
+  <div className="top-navbar">
   <div className="navbar-logo">
     <div className="logo-circle">
       <img src={logo} alt="Langster Logo" className="logo-image" />
