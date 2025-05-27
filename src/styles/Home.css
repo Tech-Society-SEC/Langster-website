@@ -9,8 +9,6 @@
   overflow-x: hidden;
 }
 
-
-/* Unified Top Navbar */
 .top-navbar {
   background-color: #7ab2d3;
   display: flex;
@@ -21,7 +19,6 @@
   box-sizing: border-box;
 }
 
-/* Logo (Left Side) */
 .navbar-logo {
   display: flex;
   align-items: center;
@@ -30,7 +27,6 @@
 .logo-circle {
   width: 50px;
   height: 50px;
-  background-color: #4a628a;
   border-radius: 50%;
   margin-right: 14px;
   display: flex;
@@ -41,7 +37,7 @@
 .logo-image {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* fills the circle, cropping if needed */
+  object-fit: cover; 
   display:block;
 }
 .logo-text {
@@ -50,7 +46,7 @@
   color: white;
 }
 
-/* Buttons (Right Side of Top Navbar) */
+
 .nav-buttons {
   display: flex;
   gap: 12px;
@@ -74,7 +70,7 @@
   color: white;
 }
 
-/* Hero Section */
+
 .hero-section {
   display: flex;
   justify-content: space-between;
@@ -85,7 +81,7 @@
   gap: 32px;
 }
 
-/* Hero Text – Left Side */
+
 .about-text {
   flex: 1;
   min-width: 300px;
@@ -103,14 +99,11 @@
   
 }
 
-
-
-/* Language Cards Section */
 .languages-section {
   max-width: 1400px;
   margin: 0 auto;
   height:400px;
-  padding: 80px 48px; /* match hero-section */
+  padding: 80px 48px;
   background-color: #b9e5e8;
   text-align: center;
   box-sizing: border-box;
@@ -184,8 +177,9 @@
   transition: 0.3s;
 }
 
-.start-btn:hover {
-  background-color: #123524;
+.start-btn:hover
+{
+  background-color: #1d2631;
 }
 
 .card-text {
@@ -202,6 +196,38 @@
   object-fit: contain;
   border-radius: 3px;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+}
+
+.cta-section {
+  background: #b9e5e8;
+  color: #4a628a;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.cta-section h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.cta-section p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.cta-btn {
+  background-color: #4a628a;
+  color: white;
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: #1d2631;
 }
 
 /* Responsive tweaks */

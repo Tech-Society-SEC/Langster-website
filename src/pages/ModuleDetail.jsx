@@ -142,17 +142,38 @@ const ModuleDetail = () => {
                 />
               </div>
             )}
-            {lesson.pronunciationWords?.length > 0 && (
-              <div className="section-card">
-                <h3>Practice Pronunciation</h3>
-                {lesson.pronunciationWords.map((word, idx) => (
-                  <button key={idx} className="option-button" onClick={() => {
-                    const utterance = new SpeechSynthesisUtterance(word);
-                    speechSynthesis.speak(utterance);
-                  }}>🔊 {word}</button>
-                ))}
-              </div>
-            )}
+             {lesson.pronunciationWords?.length > 0 && (
+             <div className="section-card">
+             <h3>Practice Pronunciation</h3>
+                 {lesson.pronunciationWords.map((word, idx) => (
+                 <button key={idx} className="option-button" onClick={() => {
+                  const utterance = new SpeechSynthesisUtterance(word);
+
+                    // Set the language for pronunciation
+                    switch (langKey) {
+                         case 'english':
+                         utterance.lang = 'en-US';
+                         break;
+                         case 'french':
+                         utterance.lang = 'fr-FR';
+                         break;
+                         case 'telugu':
+                         utterance.lang = 'te-IN';
+                         break;
+                         case 'tamil':
+                         utterance.lang = 'ta-IN';
+                         break;
+                         default:
+                          utterance.lang = 'en-US'; 
+                        }
+
+                  speechSynthesis.speak(utterance);
+                    }}>
+                   🔊 {word}
+                </button>
+              ))}
+            </div>
+             )}
             {lesson.exercise && (
               <div className="section-card">
                 <h3>Quiz</h3>

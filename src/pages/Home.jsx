@@ -1,8 +1,4 @@
-import React from 'react';
-
 import '../styles/Home.css';
-
-
 import logo from '../assets/logo.jpg';
 
 
@@ -51,7 +47,7 @@ const Home = () => {
   return (
     <div className="home-container">
       {/* Top Navbar – Logo + Buttons */}
-      {/* Top Navbar – Logo + Buttons */}
+     
 <div className="top-navbar">
   <div className="navbar-logo">
     <div className="logo-circle">
@@ -62,13 +58,13 @@ const Home = () => {
   <div className="nav-buttons">
     <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Home</button>
     <button onClick={handleScrollToLanguages}>Languages</button>
-    <button onClick={handleProfileRedirect}>User Profile</button>
-    <button onClick={handleLoginRedirect}>Login</button>
+    {isLoggedIn === 'true' && (<button onClick={handleProfileRedirect}>User Profile</button>)}
+    {isLoggedIn !== 'true' && (<button onClick={handleLoginRedirect}>Login</button>)}
   </div>
 </div>
 
 {/* Hero Section */}
-<header className="hero-section">
+<div className="hero-section">
   <div className="about-text">
     <h2>Let Your Voice Go Global</h2>
     <p>
@@ -82,7 +78,7 @@ const Home = () => {
       Whether you're just starting out or looking to improve, we are here to walk with you: one word, one lesson, one conversation at a time.
     </p>
   </div>
-</header>
+</div>
 
       {/* Languages Section */}
       <section id="languages" className="languages-section">
