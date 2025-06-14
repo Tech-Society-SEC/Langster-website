@@ -1,3 +1,12 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 .profile-page {
   display: flex;
   flex-direction: column;
@@ -40,6 +49,18 @@
   height: 100%;
   object-fit: cover;
   border-radius: 50%;
+}
+
+.back-arrow {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-size: 20px;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10px;
 }
 
 

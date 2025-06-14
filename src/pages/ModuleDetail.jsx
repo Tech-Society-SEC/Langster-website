@@ -21,7 +21,9 @@ const ModuleDetail = () => {
   const [stepPage, setStepPage] = useState(0);
   const stepsPerPage = 10;
 
-  // Use fetch to load from /public/data instead of import()
+  const [recognitionResult, setRecognitionResult] = useState('');
+  const [expectedWord, setExpectedWord] = useState('');
+
   useEffect(() => {
     const loadModule = async () => {
       try {
@@ -43,7 +45,6 @@ const ModuleDetail = () => {
   }, [langKey, moduleId]);
 
   useEffect(() => {
-    // Save progress in localStorage
     localStorage.setItem(
       `progress-${langKey}-module${moduleId}`,
       JSON.stringify(selectedAnswers)
@@ -114,6 +115,34 @@ const ModuleDetail = () => {
     setShowScore(true);
   };
 
+  const startPronunciationCheck = (word) => {
+    setExpectedWord(word);
+    const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+    if (!SpeechRecognition) {
+      alert('Speech Recognition is not supported in your browser.');
+      return;
+    }
+
+    const recognition = new SpeechRecognition();
+    recognition.lang = {
+      english: 'en-US',
+      french: 'fr-FR',
+      tamil: 'ta-IN',
+      telugu: 'te-IN',
+    }[langKey] || 'en-US';
+
+    recognition.start();
+
+    recognition.onresult = (event) => {
+      const spoken = event.results[0][0].transcript;
+      setRecognitionResult(spoken);
+    };
+
+    recognition.onerror = (event) => {
+      alert('Error recognizing speech: ' + event.error);
+    };
+  };
+
   if (!moduleData) return <div className="module-detail">Loading...</div>;
 
   const currentFinalQuestion = moduleData.finalQuiz?.[quizIndex];
@@ -142,38 +171,35 @@ const ModuleDetail = () => {
                 />
               </div>
             )}
-             {lesson.pronunciationWords?.length > 0 && (
-             <div className="section-card">
-             <h3>Practice Pronunciation</h3>
-                 {lesson.pronunciationWords.map((word, idx) => (
-                 <button key={idx} className="option-button" onClick={() => {
-                  const utterance = new SpeechSynthesisUtterance(word);
-
-                    // Set the language for pronunciation
+            {lesson.pronunciationWords?.length > 0 && (
+              <div className="section-card">
+                <h3>Practice Pronunciation</h3>
+                {lesson.pronunciationWords.map((word, idx) => (
+                  <button key={idx} className="option-button" onClick={() => {
+                    const utterance = new SpeechSynthesisUtterance(word);
                     switch (langKey) {
-                         case 'english':
-                         utterance.lang = 'en-US';
-                         break;
-                         case 'french':
-                         utterance.lang = 'fr-FR';
-                         break;
-                         case 'telugu':
-                         utterance.lang = 'te-IN';
-                         break;
-                         case 'tamil':
-                         utterance.lang = 'ta-IN';
-                         break;
-                         default:
-                          utterance.lang = 'en-US'; 
-                        }
-
-                  speechSynthesis.speak(utterance);
-                    }}>
-                   🔊 {word}
-                </button>
-              ))}
-            </div>
-             )}
+                      case 'english':
+                        utterance.lang = 'en-US';
+                        break;
+                      case 'french':
+                        utterance.lang = 'fr-FR';
+                        break;
+                      case 'telugu':
+                        utterance.lang = 'te-IN';
+                        break;
+                      case 'tamil':
+                        utterance.lang = 'ta-IN';
+                        break;
+                      default:
+                        utterance.lang = 'en-US';
+                    }
+                    speechSynthesis.speak(utterance);
+                  }}>
+                    🔊 {word}
+                  </button>
+                ))}
+              </div>
+            )}
             {lesson.exercise && (
               <div className="section-card">
                 <h3>Quiz</h3>
@@ -206,6 +232,40 @@ const ModuleDetail = () => {
         );
       })}
 
+      {moduleData.lessons && (
+     <div className="section-card">
+     <h3>Pronunciation Check:</h3>
+     <div className="pronunciation-list">
+      {Array.from(
+        new Set(
+          moduleData.lessons.flatMap(lesson => lesson.pronunciationWords || [])
+        )
+      )
+        .slice(0, 5)
+        .map((word, idx) => (
+          <div className="pronunciation-item" key={idx}>
+            <span className="word-label">{word}</span>
+            <button className="mic-button" onClick={() => startPronunciationCheck(word)}>
+              Say The Word 🎤
+            </button>
+          </div>
+        ))}
+      </div>
+
+      {recognitionResult && (
+      <p style={{ marginTop: '15px' }}>
+        🎧 You said: <strong>{recognitionResult}</strong> —{" "}
+        {recognitionResult.toLowerCase() === expectedWord.toLowerCase() ? (
+          <span style={{ color: "green" }}>Correct ✅</span>
+        ) : (
+          <span style={{ color: "red" }}>Try again ❌</span>
+        )}
+      </p>
+      )}
+      </div>
+      )}
+
+
       {moduleData.finalQuiz?.length > 0 && !finalQuizStarted && (
         <div className="section-card final-quiz-intro">
           <h3>🎓 Ready for the Final Quiz?</h3>
@@ -234,6 +294,7 @@ const ModuleDetail = () => {
               <button onClick={() => setStepPage(stepPage + 1)}>→</button>
             )}
           </div>
+
           <div className="question-block">
             <p><strong>{quizIndex + 1}. {currentFinalQuestion.question}</strong></p>
             {currentFinalQuestion.options.map((opt, idx) => {
@@ -266,6 +327,7 @@ const ModuleDetail = () => {
             <button onClick={restartFinalQuiz}>🔁 Restart</button>
             <button onClick={submitFinalQuiz} disabled={finalSubmitted}>✔️ Submit</button>
           </div>
+
           {showScore && (
             <div className="score-display">
               <h2>🎉 Your Score: {score} / {moduleData.finalQuiz.length}</h2>

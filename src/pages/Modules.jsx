@@ -50,7 +50,7 @@ const Modules = () => {
       navigate(`/modules/${selectedLanguage}/module${index + 1}`);
     } else {
       setShowPopup(true);
-      setTimeout(() => setShowPopup(false), 3000);
+      setTimeout(() => setShowPopup(false), 4000);
     }
   };
 

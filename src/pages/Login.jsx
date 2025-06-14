@@ -42,7 +42,7 @@ const Login = () => {
         setIsFirstLogin(true);
         localStorage.setItem('hasVisitedBefore', 'true');
       } else {
-        navigate('/profile');
+        navigate('/home');
       }
     } else {
       // Login check

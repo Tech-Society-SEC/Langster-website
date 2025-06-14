@@ -125,6 +125,7 @@ const Profile = () => {
   return (
     <div className="profile-page">
       <div className="profile-header">
+        <span className="back-arrow" onClick={() => navigate('/')}>←</span>
         <img
           src={profileData.backgroundImage || "https://images.unsplash.com/photo-1506744038136-46273834b3fb"}
           alt="Background"
@@ -138,7 +139,7 @@ const Profile = () => {
           accept="image/*"
           onChange={(e) => handleImageChange(e, 'backgroundImage')}
         />
-        <div className="edit-icon" onClick={() => triggerImageUpload('backgroundImage')}>✏️</div>
+        <div className="edit-icon" onClick={() => triggerImageUpload('backgroundImage')}>✏</div>
         <div className="profile-image-container">
           <img
             src={profileData.profileImage || "src/assets/profile-icon.png"}
@@ -153,7 +154,7 @@ const Profile = () => {
             accept="image/*"
             onChange={(e) => handleImageChange(e, 'profileImage')}
           />
-          <div className="edit-icon" onClick={() => triggerImageUpload('profileImage')}>✏️</div>
+          <div className="edit-icon" onClick={() => triggerImageUpload('profileImage')}>✏</div>
         </div>
       </div>
 

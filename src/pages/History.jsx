@@ -114,7 +114,7 @@ export default function History() {
               emulateTouch={true}
               infiniteLoop={true}
               autoPlay={true}
-              interval={1500}
+              interval={1000}
             >
               {lang.books.map((title, i) => (
                 <div key={i} className="book-slide">
